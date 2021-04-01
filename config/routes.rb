@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   resources :dogs do
-    resources :toys, except: [:index]
+    resources :toys
   end
 end
