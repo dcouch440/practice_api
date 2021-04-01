@@ -5,6 +5,9 @@ class ToysController < ApplicationController
     json_response(dog.toys)
   end
 
+  # dog = Dog.find(params[:id]).update!(dog_params)
+  # json_response(dog, :created)
+
   def create
     toy = dog.toys.create!(toy_params)
     json_response(toy, :created)
@@ -16,7 +19,8 @@ class ToysController < ApplicationController
   end
 
   def update
-    toy = Toy.find(params[:id]).update!(toy_params)
+    toy = Toy.find(params[:id])
+    toy.update!(toy_params)
     json_response(toy, :created)
   end
 

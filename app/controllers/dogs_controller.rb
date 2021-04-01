@@ -15,7 +15,8 @@ class DogsController < ApplicationController
   end
 
   def update
-    dog = Dog.find(params[:id]).update!(dog_params)
+    dog = Dog.find(params[:id])
+    dog.update!(dog_params)
     json_response(dog, :created)
   end
 
