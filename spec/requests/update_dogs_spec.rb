@@ -4,7 +4,6 @@ describe 'update a dog', :type => :request do
   let!(:dog) { FactoryBot.create(:dog) }
   let!(:attr) { {name: 'Eli', breed: 'doggo', size: 'huge'} }
 
-
   context 'when successful' do
     before do
       patch dog_path(dog.id), params: attr

@@ -1,24 +1,15 @@
-# README
+# About
+This is a readme to practice the fundamentals of rails api and testing, this does not reflect myself or my classmates professional work.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# setup
+Required installs,
+- Ruby 2.6.6
+- Rails 5.2.0
 
-Things you may want to cover:
+1. Clone this repo from your gitbash terminal
+2. open the project from that terminal
+3. gem install bundler
+4. bundle
+5. rails s
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Enjoy!
